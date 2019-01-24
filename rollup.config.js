@@ -19,6 +19,7 @@ export default {
     typescript(),
     babel({
       exclude: 'node_modules/**',
+      extensions: ['ts', 'tsx'],
     }),
   ]
 };
