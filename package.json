@@ -7,6 +7,9 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@types/react": "^16.7.20",
     "@types/react-dom": "^16.0.11",
