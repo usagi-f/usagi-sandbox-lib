@@ -1,0 +1,28 @@
+{
+  "name": "usagi-sandbox-lib",
+  "version": "0.0.1",
+  "description": "",
+  "author": "usagi-f",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/styled-components": "^4.1.6",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.19.2"
+  }
+}
