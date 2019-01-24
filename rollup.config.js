@@ -8,7 +8,7 @@ export default {
   input: './src/index.ts',
   output: {
     file: pkg.main,
-    format: 'esm',
+    format: 'cjs',
     exports: 'named',
   },
   external: [
@@ -18,6 +18,10 @@ export default {
     nodeResolve(),
     typescript(),
     babel({
+      presets: [
+        "@babel/preset-env",
+        "@babel/preset-react",
+      ],
       exclude: 'node_modules/**',
       extensions: ['ts', 'tsx'],
     }),
