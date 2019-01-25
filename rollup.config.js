@@ -1,6 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import typescript from 'rollup-plugin-typescript2'
+import postcss from 'rollup-plugin-postcss'
 
 import pkg from './package.json'
 
@@ -16,7 +17,14 @@ export default {
   ],
   plugins: [
     nodeResolve(),
-    typescript(),
+    postcss({
+      extract: pkg.mainCss,
+      modules: true,
+      namedExports: true,
+    }),
+    typescript({
+      objectHashIgnoreUnknownHack: true,
+    }),
     babel({
       presets: [
         "@babel/preset-env",

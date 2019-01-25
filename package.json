@@ -1,9 +1,10 @@
 {
   "name": "usagi-sandbox-lib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "author": "usagi-f",
   "main": "dist/index.js",
+  "mainCss": "dist/css/all.css",
   "scripts": {
     "build": "rollup -c"
   },
@@ -24,6 +25,7 @@
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.0",
     "rollup-plugin-typescript2": "^0.19.2"
   }
 }

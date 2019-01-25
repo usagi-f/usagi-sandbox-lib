@@ -1,0 +1,10 @@
+.avatar {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.avatar img {
+  vertical-align: middle;
+}
