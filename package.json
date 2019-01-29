@@ -1,6 +1,6 @@
 {
   "name": "usagi-sandbox-lib",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "author": "usagi-f",
   "main": "dist/index.js",
@@ -26,6 +26,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "npm-run-all": "^4.1.5",
+    "postcss-css-variables": "^0.11.0",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.0.0",
