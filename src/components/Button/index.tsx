@@ -6,7 +6,7 @@ interface IButtonProps extends React.Props<{}> {
   text?: string;
 }
 
-const Button: React.FC<IButtonProps> = (props: IButtonProps) => (
+const Button: React.FC<IButtonProps> = props => (
   <ThemeConsumer>
     {({ theme }) => (
       <button

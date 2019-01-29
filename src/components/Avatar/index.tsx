@@ -6,7 +6,7 @@ interface IAvatarProps extends React.Props<{}> {
   size?: number;
 }
 
-const Avatar: React.FC<IAvatarProps> = (props: IAvatarProps) => (
+const Avatar: React.FC<IAvatarProps> = props => (
   <div className={style.avatar}>
     <img src={`https://via.placeholder.com/${props.size}`} alt={props.alt} width={props.size} />
   </div>
