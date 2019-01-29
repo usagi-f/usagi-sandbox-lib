@@ -1,15 +1,15 @@
 {
   "name": "usagi-sandbox-lib",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "author": "usagi-f",
   "main": "dist/index.js",
   "mainCss": "dist/css/all.css",
   "scripts": {
     "rollup": "rollup -c",
-    "copy": "cp -r ./dist ./app/src",
+    "csscopy": "cp -r ./dist/css ./app/src/dist/css",
     "remove": "rm -rf ./dist ./app/src/dist",
-    "build": "npm-run-all -s remove rollup copy"
+    "build": "npm-run-all -s remove rollup csscopy"
   },
   "files": [
     "dist"

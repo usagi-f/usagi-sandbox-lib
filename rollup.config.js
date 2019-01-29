@@ -9,11 +9,18 @@ import { ColorsWithHash, Spacing } from './src/variables/index.ts'
 
 export default {
   input: './src/index.ts',
-  output: {
-    file: pkg.main,
-    format: 'esm',
-    exports: 'named',
-  },
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs',
+      exports: 'named',
+    },
+    {
+      file: './app/src/dist/index.js',
+      format: 'esm',
+      exports: 'named',
+    }
+  ],
   external: [
     ...Object.keys(pkg.dependencies),
   ],

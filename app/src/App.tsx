@@ -14,30 +14,34 @@ class App extends React.Component {
         <Button>Hello World!</Button>
         <Button {...buttonProps}></Button>
         <table>
-          <tr>
-            <th>400</th>
-            <th>300</th>
-            <th>200</th>
-            <th>100</th>
-            <th>50</th>
-          </tr>
-          <tr>
-            <td>
-              <img src={`https://via.placeholder.com/100/${Colors.red400}/FFF`} alt="" />
-            </td>
-            <td>
-              <img src={`https://via.placeholder.com/100/${Colors.red300}/FFF`} alt="" />
-            </td>
-            <td>
-              <img src={`https://via.placeholder.com/100/${Colors.red200}/FFF`} alt="" />
-            </td>
-            <td>
-              <img src={`https://via.placeholder.com/100/${Colors.red100}/FFF`} alt="" />
-            </td>
-            <td>
-              <img src={`https://via.placeholder.com/100/${Colors.red50}/FFF`} alt="" />
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th>400</th>
+              <th>300</th>
+              <th>200</th>
+              <th>100</th>
+              <th>50</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src={`https://via.placeholder.com/100/${Colors.red400}/FFF`} alt="" />
+              </td>
+              <td>
+                <img src={`https://via.placeholder.com/100/${Colors.red300}/FFF`} alt="" />
+              </td>
+              <td>
+                <img src={`https://via.placeholder.com/100/${Colors.red200}/FFF`} alt="" />
+              </td>
+              <td>
+                <img src={`https://via.placeholder.com/100/${Colors.red100}/FFF`} alt="" />
+              </td>
+              <td>
+                <img src={`https://via.placeholder.com/100/${Colors.red50}/FFF`} alt="" />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </>
     );
