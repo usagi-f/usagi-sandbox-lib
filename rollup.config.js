@@ -39,13 +39,6 @@ export default {
     typescript({
       objectHashIgnoreUnknownHack: true,
     }),
-    babel({
-      presets: [
-        "@babel/preset-env",
-        "@babel/preset-react",
-      ],
-      exclude: 'node_modules/**',
-      extensions: ['ts', 'tsx'],
-    }),
+    babel(),
   ]
 };
