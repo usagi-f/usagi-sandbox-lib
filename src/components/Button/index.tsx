@@ -1,30 +1,14 @@
 import * as React from 'react'
-import * as style from './style.css'
+import { Button, IButtonProps } from './Button'
 import { ThemeConsumer } from '../../context'
 
-interface IButtonProps extends React.Props<{}> {
-  text?: string;
-}
-
-const Button: React.FC<IButtonProps> = props => (
+const ButtonWithConsumer: React.FC<IButtonProps> = props => (
   <ThemeConsumer>
-    {({ theme }) => (
-      <button
-        type="button"
-        data-theme={theme}
-        className={style.button}
-      >
-        {props.children || props.text}
-      </button>
-    )}
+    {({ theme }) => <Button theme={theme} {...props} />}
   </ThemeConsumer>
 )
 
-Button.defaultProps = {
-  text: 'MyButton',
-}
-
 export {
-  Button,
+  ButtonWithConsumer as Button,
   IButtonProps,
 }
