@@ -1,7 +1,7 @@
 .button {
-  font-size: 24px;
   background-color: red;
   color: var(--mono50);
+  font-size: 24px;
 }
 
 .button[data-theme="dark"] {
