@@ -14,8 +14,10 @@
     "dev": "npm-run-all -s remove rollup:watch csscopy",
     "test": "jest --config ./config/jest.config.js",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "lint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
-    "lint:lint-staged": "tslint --fix -c tslint.json"
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "tslint:lint-staged": "tslint --fix -c tslint.json",
+    "stylelint": "stylelint './src/**/*.css'",
+    "stylelint:fix": "stylelint --fix './src/**/*.css'"
   },
   "files": [
     "dist"
@@ -49,6 +51,10 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.0",
     "rollup-plugin-typescript2": "^0.19.2",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",

@@ -1,7 +1,12 @@
 {
   "*.{js,jsx,ts,tsx}": [
     "prettier --write",
-    "npm run lint:lint-staged",
+    "npm run tslint:lint-staged",
+    "git add"
+  ],
+  "*.css": [
+    "prettier --write",
+    "npm run stylelint:fix",
     "git add"
   ]
 }
