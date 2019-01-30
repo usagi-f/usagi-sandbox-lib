@@ -5,7 +5,7 @@ const Colors = {
   red100: 'ffe6e8',
   red50: 'fff5f5',
   mono50: 'fff',
-}
+};
 
 const ColorsWithHash = {
   red400: `#${Colors.red400}`,
@@ -14,14 +14,10 @@ const ColorsWithHash = {
   red100: `#${Colors.red100}`,
   red50: `#${Colors.red50}`,
   mono50: `#${Colors.mono50}`,
-}
+};
 
 const Spacing = {
   medium: 24,
-}
+};
 
-export {
-  Colors,
-  ColorsWithHash,
-  Spacing
-}
+export { Colors, ColorsWithHash, Spacing };

@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { shallow } from 'enzyme'
-import { Avatar, IAvatarProps } from './Avatar'
+import * as React from 'react';
+import { shallow } from 'enzyme';
+import { Avatar, IAvatarProps } from './Avatar';
 
 test('Rendered by props', () => {
   const props: IAvatarProps = {
     alt: 'foo',
     size: 10,
-  }
+  };
   const wrapper = shallow(<Avatar {...props} />);
   expect(wrapper.find('img').prop('alt')).toBe(props.alt);
   expect(wrapper.find('img').prop('width')).toBe(props.size);
