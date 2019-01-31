@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import { Button, IButtonProps, Colors } from 'usagi-sandbox-lib'
+import { Button, IButtonProps, Colors } from 'usagi-sandbox-lib';
 
 const buttonProps: IButtonProps = {
   text: 'Hello Dog!',
-}
+};
 
 class App extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class App extends React.Component {
       <>
         <Button />
         <Button>Hello World!</Button>
-        <Button {...buttonProps}></Button>
+        <Button {...buttonProps} />
         <table>
           <thead>
             <tr>

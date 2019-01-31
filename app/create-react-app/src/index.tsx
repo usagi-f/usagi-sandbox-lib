@@ -9,13 +9,13 @@ import 'usagi-sandbox-lib/dist/css/all.css';
 
 const context: Context = {
   theme: 'dark',
-}
+};
 
 ReactDOM.render(
   <ThemeProvider value={context}>
     <App />
   </ThemeProvider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 serviceWorker.unregister();
