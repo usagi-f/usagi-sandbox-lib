@@ -1,14 +1,22 @@
-import React from 'react';
+import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-
-import { Welcome } from '@storybook/react/demo';
-import { Button } from 'usagi-sandbox-lib';
-
 import 'usagi-sandbox-lib/dist/css/all.css';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome />);
+import { Button, Avatar } from './wrapper';
 
 storiesOf('Button', module)
-  .add('with children text', () => <Button>Hello Button</Button>)
-  .add('with props text', () => <Button text="Custom Props Text" />)
-  .add('fallback text', () => <Button />);
+  .add('Simple render', () => <Button />)
+  .add('with children', () => <Button>Hello Button</Button>)
+  .add('with text', () => <Button text="Custom Props Text" />);
+
+storiesOf('Avatar', module)
+  .add('Simple render', () => <Avatar />)
+  .add('with alt', () => <Avatar alt="Custom Alt" />)
+  .add('with size', () => (
+    <div>
+      <Avatar size={12} />
+      <Avatar size={24} />
+      <Avatar size={48} />
+      <Avatar size={64} />
+    </div>
+  ));

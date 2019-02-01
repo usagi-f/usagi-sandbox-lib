@@ -6,5 +6,5 @@
 }
 
 .avatar img {
-  vertical-align: middle;
+  display: block;
 }
