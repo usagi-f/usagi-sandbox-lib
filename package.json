@@ -7,8 +7,7 @@
   "mainCss": "dist/css/all.css",
   "scripts": {
     "build": "rollup -c",
-    "build:watch": "rollup -c -w",
-    "dev": "npm-run-all -s remove rollup:watch csscopy",
+    "build:w": "npm run build -- -w",
     "test": "jest --config ./config/jest.config.js",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
