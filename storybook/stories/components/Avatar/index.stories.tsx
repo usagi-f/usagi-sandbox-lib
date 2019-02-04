@@ -1,13 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+
+import { Avatar as AvatarComponent, IAvatarProps } from 'usagi-sandbox-lib';
 import 'usagi-sandbox-lib/dist/css/all.css';
 
-import { Button, Avatar } from './wrapper';
-
-storiesOf('Button', module)
-  .add('Simple render', () => <Button />)
-  .add('with children', () => <Button>Hello Button</Button>)
-  .add('with text', () => <Button text="Custom Props Text" />);
+export const Avatar: React.FC<IAvatarProps> = props => <AvatarComponent {...props} />;
 
 storiesOf('Avatar', module)
   .add('Simple render', () => <Avatar />)
