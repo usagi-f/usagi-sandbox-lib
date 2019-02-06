@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-
-import { Button as ButtonComponent, IButtonProps } from 'usagi-sandbox-lib';
-import 'usagi-sandbox-lib/dist/css/all.css';
-
-export const Button: React.FC<IButtonProps> = props => <ButtonComponent {...props} />;
+import { Button } from '../../../src/components/Button/Button';
 
 storiesOf('Button', module)
   .add('Simple render', () => <Button />)
