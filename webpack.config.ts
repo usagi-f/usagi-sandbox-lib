@@ -52,6 +52,10 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
   },
+  externals: {
+    react: 'react',
+    reactDom: 'react-dom',
+  },
 };
 
 export default config;
