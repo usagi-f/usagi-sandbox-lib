@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-
-import { Avatar as AvatarComponent, IAvatarProps } from 'usagi-sandbox-lib';
-import 'usagi-sandbox-lib/dist/css/all.css';
-
-export const Avatar: React.FC<IAvatarProps> = props => <AvatarComponent {...props} />;
+import { Avatar } from './Avatar';
 
 storiesOf('Avatar', module)
   .add('Simple render', () => <Avatar />)
