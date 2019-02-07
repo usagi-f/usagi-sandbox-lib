@@ -1,0 +1,7 @@
+.button {
+  background-color: darkred;
+  border-radius: 5px;
+  color: var(--mono50);
+  font-size: 12px;
+  padding: 5px 20px;
+}

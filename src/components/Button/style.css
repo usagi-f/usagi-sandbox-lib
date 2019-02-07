@@ -3,7 +3,3 @@
   color: var(--mono50);
   font-size: 24px;
 }
-
-.button[data-theme="dark"] {
-  background-color: darkred;
-}
