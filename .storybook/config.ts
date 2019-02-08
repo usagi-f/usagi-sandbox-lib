@@ -1,7 +1,13 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-const req = require('require-context')('../../src/components', true, /.stories.tsx$/);
+let req: __WebpackModuleApi.RequireContext;
+
+if (process.env.NODE_ENV === 'test') {
+  req = require('require-context')('../../src/components', true, /.stories.tsx$/);
+} else {
+  req = require.context('../src/components', true, /.stories.tsx$/);
+}
 
 function loadStories() {
   req.keys().forEach((filename: any) => req(filename));
