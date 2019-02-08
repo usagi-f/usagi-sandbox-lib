@@ -1,8 +1,11 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-const req = require.context('../src/components', true, /.stories.tsx$/);
-const loadStories = () => req.keys().forEach(req);
+const req = require('require-context')('../../src/components', true, /.stories.tsx$/);
+
+function loadStories() {
+  req.keys().forEach((filename: any) => req(filename));
+}
 
 const option: {
   styles?: any;
