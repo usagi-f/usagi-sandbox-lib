@@ -23,7 +23,7 @@ export default {
       namedExports: true,
       plugins: [
         postCssVariables({
-          variables: Object.assign(ColorsWithHash, Spacing),
+          variables: Object.assign(colorsWithHash, spacing),
         }),
       ],
     }),
