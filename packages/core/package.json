@@ -1,0 +1,38 @@
+{
+  "name": "@usagi-sandbox-lib/core",
+  "version": "0.0.0",
+  "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "build:w": "npm run build -- -w"
+  },
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usagi-f/usagi-sandbox-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usagi-f/usagi-sandbox-lib/issues"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.20",
+    "@usagi-sandbox-lib/context": "^0.0.0",
+    "react": "^16.7.0",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-typescript2": "^0.19.2"
+  }
+}

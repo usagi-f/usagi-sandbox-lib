@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button, IButtonProps } from './Button';
-import { ThemeConsumer } from '../../context';
+import { ThemeConsumer } from '@usagi-sandbox-lib/context';
 
 const ButtonWithConsumer: React.FC<IButtonProps> = props => (
   <ThemeConsumer>{({ theme }) => <Button theme={theme} {...props} />}</ThemeConsumer>
