@@ -1,6 +1,6 @@
 {
   "name": "@usagi-sandbox-lib/variables",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@types/react": "^16.7.20",
-    "@usagi-sandbox-lib/context": "^0.0.0",
+    "@usagi-sandbox-lib/context": "^1.0.0",
     "react": "^16.7.0",
     "typescript": "^3.2.4"
   },
