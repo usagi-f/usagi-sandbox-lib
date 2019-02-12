@@ -1,6 +1,6 @@
 {
   "name": "@usagi-f/usagi-sandbox-lib-core",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
   "main": "lib/index.js",
   "mainCss": "css/index.css",
