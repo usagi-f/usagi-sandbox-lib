@@ -5,7 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import postCssVariables from 'postcss-css-variables';
 
 import pkg from './package.json';
-import { ColorsWithHash, Spacing } from './src/variables/index.ts';
+import { colorsWithHash, spacing } from './src/variables/index.ts';
 
 export default {
   input: './src/index.ts',
