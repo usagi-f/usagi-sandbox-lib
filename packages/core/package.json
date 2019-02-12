@@ -1,5 +1,5 @@
 {
-  "name": "@usagi-sandbox-lib/core",
+  "name": "@usagi-f/usagi-sandbox-lib-core",
   "version": "1.2.0",
   "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
   "main": "lib/index.js",
