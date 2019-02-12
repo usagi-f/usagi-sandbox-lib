@@ -37,5 +37,9 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-typescript2": "^0.19.2"
+  },
+  "gitHead": "f73fee12f5b2c442c312dda50332b151be2fcaaf",
+  "publishConfig": {
+    "access": "public"
   }
 }
