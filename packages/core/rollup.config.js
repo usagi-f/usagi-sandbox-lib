@@ -2,10 +2,10 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
-import postCssVariables from 'postcss-css-variables';
+import postcssCssVariables from 'postcss-css-variables';
 
 import pkg from './package.json';
-import { colorsWithHash, spacing } from './src/variables/index.ts';
+import { colorsWithHash, spacing } from '@usagi-sandbox-lib/variables';
 
 export default {
   input: './src/index.ts',
@@ -22,7 +22,7 @@ export default {
       modules: true,
       namedExports: true,
       plugins: [
-        postCssVariables({
+        postcssCssVariables({
           variables: Object.assign(colorsWithHash, spacing),
         }),
       ],

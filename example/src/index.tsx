@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { ThemeProvider, Context } from 'usagi-sandbox-lib';
-import 'usagi-sandbox-lib/dist/css/all.css';
+import { ThemeProvider, Context } from '@usagi-sandbox-lib/context';
+import '@usagi-sandbox-lib/core/css/index.css';
 
 const context: Context = {
   theme: 'dark',

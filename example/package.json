@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@usagi-sandbox-lib/core": "file:../packages/core",
+    "@usagi-sandbox-lib/context": "file:../packages/context",
+    "@usagi-sandbox-lib/variables": "file:../packages/variables",
     "@types/jest": "23.3.13",
     "@types/node": "10.12.19",
     "@types/react": "16.7.22",
@@ -10,8 +13,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
-    "typescript": "3.2.4",
-    "usagi-sandbox-lib": "file:.."
+    "typescript": "3.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

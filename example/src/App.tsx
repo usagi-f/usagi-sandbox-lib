@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { Button, IButtonProps, colors } from 'usagi-sandbox-lib';
+import { Button, IButtonProps } from '@usagi-sandbox-lib/core';
+import { colors } from '@usagi-sandbox-lib/variables';
 
 const buttonProps: IButtonProps = {
   text: 'Hello Dog!',
