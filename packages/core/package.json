@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
   "main": "lib/index.js",
-  "mainCss": "lib/css/core.css",
+  "mainCss": "css/index.css",
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "rollup -c",
