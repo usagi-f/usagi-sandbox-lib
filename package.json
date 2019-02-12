@@ -6,8 +6,8 @@
   "main": "dist/index.js",
   "mainCss": "dist/css/all.css",
   "scripts": {
-    "build": "rollup -c",
-    "build:w": "npm run build -- -w",
+    "install": "lerna bootstrap",
+    "build": "lerna run build",
     "test": "jest --config ./config/jest.config.js",
     "test:u": "npm test -- -u",
     "lint": "tslint -c tslint.json -p tsconfig.json",
