@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as style from './style.css';
-import { Context } from '@usagi-sandbox-lib/context';
+import { Context } from '@usagi-f/usagi-sandbox-lib-context';
 
 interface IButtonProps extends React.Props<{}> {
   text?: string;

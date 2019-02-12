@@ -5,7 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import postcssCssVariables from 'postcss-css-variables';
 
 import pkg from './package.json';
-import { colorsWithHash, spacing } from '@usagi-sandbox-lib/variables';
+import { colorsWithHash, spacing } from '@usagi-f/usagi-sandbox-lib-variables';
 
 export default {
   input: './src/index.ts',

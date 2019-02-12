@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@usagi-sandbox-lib/core": "file:../packages/core",
-    "@usagi-sandbox-lib/context": "file:../packages/context",
-    "@usagi-sandbox-lib/variables": "file:../packages/variables",
+    "@usagi-f/usagi-sandbox-lib-core": "file:../packages/core",
+    "@usagi-f/usagi-sandbox-lib-context": "file:../packages/context",
+    "@usagi-f/usagi-sandbox-lib-variables": "file:../packages/variables",
     "@types/jest": "23.3.13",
     "@types/node": "10.12.19",
     "@types/react": "16.7.22",
