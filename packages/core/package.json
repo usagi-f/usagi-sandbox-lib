@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "homepage": "https://github.com/usagi-f/usagi-sandbox-lib#readme",
   "main": "lib/index.js",
+  "mainCss": "lib/css/core.css",
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -25,10 +26,12 @@
   "dependencies": {
     "@types/react": "^16.7.20",
     "@usagi-sandbox-lib/context": "^0.0.0",
+    "@usagi-sandbox-lib/variables": "^0.0.0",
     "react": "^16.7.0",
     "typescript": "^3.2.4"
   },
   "devDependencies": {
+    "postcss-css-variables": "^0.11.0",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.0.0",
